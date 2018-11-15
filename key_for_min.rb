@@ -5,5 +5,3 @@ def key_for_min_value(name_hash)
   name_hash.sort_by { |_key, value| }
   first_key = name_hash.first.first
 end
-
-
