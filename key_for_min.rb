@@ -3,6 +3,7 @@ require 'pry'
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
- name_hash = name_hash.sort_by {|k,v| v}
- first_key = name_hash.first.first
+  name_hash.collect do {
+    name_hash = name_hash.sort_by {|k,v| v}
+    first_key = name_hash.first.first }
 end
